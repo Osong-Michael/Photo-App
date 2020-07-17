@@ -7,6 +7,14 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
+
+    <script>
+      var pusher = new Pusher("a1b2b8907b091ceabf4b", {
+      cluster: 'eu',
+      encrypted: true
+    });
+    </script>
   </head>
 
   <body>
